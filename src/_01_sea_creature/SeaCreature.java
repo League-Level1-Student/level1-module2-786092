@@ -29,7 +29,7 @@ public class SeaCreature {
 
 	public void laugh() {
 		try {
-		    AudioClip sound = JApplet.newAudioClip(getClass().getResource(this.name + ".wav"));
+		    AudioClip sound = JApplet.newAudioClip(getClass().getResource(this.name.toLowerCase() + ".wav"));
 		    sound.play();
 			Thread.sleep(3400);
 		} catch (Exception ex) {
